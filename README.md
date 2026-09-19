@@ -5,7 +5,8 @@ a video-editing pipeline that plans and cuts real footage, grades it through a
 parametric LUT, rasterises karaoke captions, and refuses to ship any caption that
 fails a measured quality gate.
 
-- **Video:** [`vidbridge-demo-ifa-30s.mp4`](./vidbridge-demo-ifa-30s.mp4)
+- **Watch in the browser:** [`vidbridge-demo-ifa-30s-web.mp4`](./vidbridge-demo-ifa-30s-web.mp4) (web encode, plays inline on GitHub)
+- **Full quality:** [download from the release](https://github.com/Malek1414/vidbridge-public-video-demo/releases/tag/demo-v1) (32 MB, 8.6 Mbps)
 - **Author:** Malek Hassan — [malek1414.github.io](https://malek1414.github.io) · [github.com/Malek1414](https://github.com/Malek1414)
 
 This repository contains only the demo video. The pipeline source is private.
