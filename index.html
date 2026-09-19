@@ -5,33 +5,46 @@
 :root{color-scheme:dark}
 body{margin:0;background:#0b0b0f;color:#f2f2f2;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;display:flex;flex-direction:column;align-items:center;gap:8px;padding:32px 20px 56px}
 h1{font-size:34px;margin:0;letter-spacing:-.5px}
-h2{font-size:15px;font-weight:600;color:#ffe600;text-transform:uppercase;letter-spacing:1.4px;margin:44px 0 2px}
+.tag{margin:0;max-width:64ch;text-align:center;color:#8a8f98}
+h2{font-size:15px;font-weight:600;color:#ffe600;text-transform:uppercase;letter-spacing:1.4px;margin:48px 0 2px;text-align:center}
 p{margin:0;max-width:64ch;text-align:center;color:#8a8f98}
 video{border-radius:10px;background:#000;margin-top:14px;max-width:100%}
 video.wide{width:min(1100px,100%)}
 video.tall{max-height:78vh}
+.files{margin-top:10px;font-size:13px;color:#5a5f6a;text-align:center}
+.files a{color:#8a8f98;text-decoration:none;border-bottom:1px solid #2a2d35}
+.files a:hover{color:#ffe600;border-bottom-color:#ffe600}
 a{color:#ffe600}
-footer{margin-top:52px;color:#5a5f6a;font-size:14px}
+footer{margin-top:56px;color:#5a5f6a;font-size:14px;text-align:center}
 </style></head>
 <body>
 
 <h1>vidbridge</h1>
-<p>Claude Code plans and cuts the footage. Codex CLI renders the effects. A small Python CLI is
-the deterministic plumbing between them.</p>
+<p class="tag">Claude Code plans and cuts the footage. Codex CLI renders the effects. A small
+Python CLI is the deterministic plumbing between them. Two videos below: how it works, and
+what it produced.</p>
 
-<h2>How it works, in 48 seconds</h2>
+<h2>1 · How it works, in 48 seconds</h2>
 <p>One real job: fifteen originals from a phone's camera roll at IFA Berlin 2026 become a
 30-second vertical reel of exactly 900 frames. Every number on screen comes from that run.</p>
-<video class="wide" controls playsinline autoplay muted loop
+<video class="wide" controls playsinline autoplay muted loop preload="auto"
        poster="vidbridge-how-it-works-poster.png" src="vidbridge-how-it-works-web.mp4"></video>
+<div class="files">
+  <a href="vidbridge-how-it-works.mov">.mov · 1920×1080 · 5 MB</a> &nbsp;·&nbsp;
+  <a href="vidbridge-how-it-works-web.mp4">.mp4 · 1280×720 · 2 MB</a>
+</div>
 
-<h2>The reel it produced</h2>
+<h2>2 · The reel it produced</h2>
 <p>Cut, graded through a parametric LUT, and captioned inside the safe area.</p>
-<video class="tall" controls playsinline loop src="vidbridge-demo-ifa-30s-web.mp4"></video>
+<video class="tall" controls playsinline loop preload="metadata"
+       src="vidbridge-demo-ifa-30s-web.mp4"></video>
+<div class="files">
+  <a href="vidbridge-demo-ifa-30s.mp4">.mp4 · 1080×1920 · 32 MB</a> &nbsp;·&nbsp;
+  <a href="vidbridge-demo-ifa-30s-web.mp4">.mp4 · web · 8 MB</a>
+</div>
 
 <footer>
   <a href="https://github.com/Malek1414/vidbridge-public-video-demo">Repository</a> ·
-  <a href="https://github.com/Malek1414/vidbridge-public-video-demo/releases/tag/demo-v1">Full-quality download</a> ·
   <a href="https://github.com/Malek1414">Malek Hassan</a>
 </footer>
 
